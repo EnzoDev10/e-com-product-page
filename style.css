@@ -1,11 +1,12 @@
+/* Primary */
+/* Neutral */
+/* (with 75% opacity for lightbox background) */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
 }
-/* Primary */
-/* Neutral */
-/* (with 75% opacity for lightbox background) */
 .attribution {
   font-size: 11px;
   text-align: center;
