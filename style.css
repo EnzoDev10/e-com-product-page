@@ -1,12 +1,96 @@
+/* Colors */
 /* Primary */
 /* Neutral */
-/* (with 75% opacity for lightbox background) */
+/* _ */
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Kumbh Sans", sans-serif;
 }
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header,
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+button {
+  all: unset;
+}
+/* Header */
+header .navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+header .navbar .menu-btn {
+  margin-right: 10px;
+  z-index: 15;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+header .navbar .nav-menu {
+  display: none;
+  list-style: none;
+}
+header .navbar .nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 10;
+  padding: 20px 0 0 30px;
+}
+header .navbar .nav-menu.active .nav-item {
+  font-weight: 700;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+header .navbar .nav-menu.active .nav-item:active {
+  color: #ff7d1a;
+}
+header .navbar .nav-menu.active li:first-of-type {
+  margin-top: 60px;
+}
+header .navbar .overlay {
+  display: none;
+}
+header .navbar .overlay.active {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  mix-blend-mode: overlay;
+  z-index: 5;
+}
+header .navbar .profile-container {
+  position: absolute;
+  right: 10px;
+  display: flex;
+}
+header .navbar .profile-container img {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+header .brand {
+  font-weight: 800;
+  font-size: 1.6rem;
+  margin-left: 20px;
+}
+/* _ */
 .attribution {
   font-size: 11px;
   text-align: center;
